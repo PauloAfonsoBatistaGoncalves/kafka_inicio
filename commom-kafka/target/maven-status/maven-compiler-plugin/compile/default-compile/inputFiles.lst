@@ -1,0 +1,6 @@
+/home/paulo/Documents/workspace-spring-tool-suite-4-4.6.2.RELEASE/ecommerce/commom-kafka/src/main/java/br/com/alura/ecommerce/GsonSerializer.java
+/home/paulo/Documents/workspace-spring-tool-suite-4-4.6.2.RELEASE/ecommerce/commom-kafka/src/main/java/br/com/alura/ecommerce/Email.java
+/home/paulo/Documents/workspace-spring-tool-suite-4-4.6.2.RELEASE/ecommerce/commom-kafka/src/main/java/br/com/alura/ecommerce/GsonDeserializer.java
+/home/paulo/Documents/workspace-spring-tool-suite-4-4.6.2.RELEASE/ecommerce/commom-kafka/src/main/java/br/com/alura/ecommerce/KafkaDispatcher.java
+/home/paulo/Documents/workspace-spring-tool-suite-4-4.6.2.RELEASE/ecommerce/commom-kafka/src/main/java/br/com/alura/ecommerce/ConsumerFunction.java
+/home/paulo/Documents/workspace-spring-tool-suite-4-4.6.2.RELEASE/ecommerce/commom-kafka/src/main/java/br/com/alura/ecommerce/KafkaService.java
