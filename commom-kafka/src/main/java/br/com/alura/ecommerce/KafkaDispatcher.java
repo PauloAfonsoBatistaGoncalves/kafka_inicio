@@ -23,10 +23,13 @@ public class KafkaDispatcher<T> implements Closeable{
 		properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
 		properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 		properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, GsonSerializer.class.getName());
+		//ACKS_CONFIG indica quantas copias o servidor leader deverá ter feito (e confirmadas) para que a requisição seja considerada realmente completada
+		//garantia de replicas
+		properties.setProperty(ProducerConfig.ACKS_CONFIG, "all");
 		return properties;
 	}
 
-	void send(String topic, String key, T value) throws InterruptedException, ExecutionException {
+	public void send(String topic, String key, T value) throws InterruptedException, ExecutionException {
 		var record = new ProducerRecord<>(topic, key, value);
 		Callback callback = (data, ex)->{
 			if(ex != null) {

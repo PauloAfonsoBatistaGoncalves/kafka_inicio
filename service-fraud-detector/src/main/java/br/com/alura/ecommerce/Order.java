@@ -4,15 +4,29 @@ import java.math.BigDecimal;
 
 public class Order {
 
-	private final String userId;
+	private final String email;
 	private final String orderId;
 	private final BigDecimal amount;
 	
-	public Order(String userId, String orderId, BigDecimal amount) {
+	public Order(String userId, String orderId, BigDecimal amount, String email) {
 		super();
-		this.userId = userId;
+		this.email = email;
 		this.orderId = orderId;
 		this.amount = amount;
+	}
+
+	public BigDecimal getAmount() {
+		return amount;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+	@Override
+	public String toString() {
+		return "Order [email=" + email + ", orderId=" + orderId + ", amount=" + amount + "]";
 	}
 	
 	
